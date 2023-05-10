@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		92FCC6E72A0BDFC000BC7C5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FCC6E62A0BDFC000BC7C5C /* AppDelegate.swift */; };
 		92FCC6E92A0BDFC000BC7C5C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FCC6E82A0BDFC000BC7C5C /* SceneDelegate.swift */; };
-		92FCC6EB2A0BDFC000BC7C5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FCC6EA2A0BDFC000BC7C5C /* ViewController.swift */; };
-		92FCC6EE2A0BDFC000BC7C5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92FCC6EC2A0BDFC000BC7C5C /* Main.storyboard */; };
+		92FCC6EB2A0BDFC000BC7C5C /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FCC6EA2A0BDFC000BC7C5C /* SettingsController.swift */; };
 		92FCC6F02A0BDFC100BC7C5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92FCC6EF2A0BDFC100BC7C5C /* Assets.xcassets */; };
 		92FCC6F32A0BDFC100BC7C5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92FCC6F12A0BDFC100BC7C5C /* LaunchScreen.storyboard */; };
+		92FCC6FB2A0BFC2400BC7C5C /* InfectionSimulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FCC6FA2A0BFC2400BC7C5C /* InfectionSimulator.swift */; };
+		92FCC6FD2A0BFE4C00BC7C5C /* SimulationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92FCC6FC2A0BFE4C00BC7C5C /* SimulationScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		92FCC6E32A0BDFC000BC7C5C /* InfectionSimulatorVK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfectionSimulatorVK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92FCC6E62A0BDFC000BC7C5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92FCC6E82A0BDFC000BC7C5C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		92FCC6EA2A0BDFC000BC7C5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		92FCC6ED2A0BDFC000BC7C5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		92FCC6EA2A0BDFC000BC7C5C /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		92FCC6EF2A0BDFC100BC7C5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92FCC6F22A0BDFC100BC7C5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92FCC6F42A0BDFC100BC7C5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92FCC6FA2A0BFC2400BC7C5C /* InfectionSimulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfectionSimulator.swift; sourceTree = "<group>"; };
+		92FCC6FC2A0BFE4C00BC7C5C /* SimulationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulationScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,32 @@
 		92FCC6E52A0BDFC000BC7C5C /* InfectionSimulatorVK */ = {
 			isa = PBXGroup;
 			children = (
+				92FCC7012A0C265F00BC7C5C /* Controllers */,
+				92FCC7002A0C265900BC7C5C /* Models */,
 				92FCC6E62A0BDFC000BC7C5C /* AppDelegate.swift */,
 				92FCC6E82A0BDFC000BC7C5C /* SceneDelegate.swift */,
-				92FCC6EA2A0BDFC000BC7C5C /* ViewController.swift */,
-				92FCC6EC2A0BDFC000BC7C5C /* Main.storyboard */,
 				92FCC6EF2A0BDFC100BC7C5C /* Assets.xcassets */,
 				92FCC6F12A0BDFC100BC7C5C /* LaunchScreen.storyboard */,
 				92FCC6F42A0BDFC100BC7C5C /* Info.plist */,
 			);
 			path = InfectionSimulatorVK;
+			sourceTree = "<group>";
+		};
+		92FCC7002A0C265900BC7C5C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				92FCC6FA2A0BFC2400BC7C5C /* InfectionSimulator.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		92FCC7012A0C265F00BC7C5C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				92FCC6EA2A0BDFC000BC7C5C /* SettingsController.swift */,
+				92FCC6FC2A0BFE4C00BC7C5C /* SimulationScreen.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +146,6 @@
 			files = (
 				92FCC6F32A0BDFC100BC7C5C /* LaunchScreen.storyboard in Resources */,
 				92FCC6F02A0BDFC100BC7C5C /* Assets.xcassets in Resources */,
-				92FCC6EE2A0BDFC000BC7C5C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +156,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92FCC6EB2A0BDFC000BC7C5C /* ViewController.swift in Sources */,
+				92FCC6EB2A0BDFC000BC7C5C /* SettingsController.swift in Sources */,
 				92FCC6E72A0BDFC000BC7C5C /* AppDelegate.swift in Sources */,
+				92FCC6FB2A0BFC2400BC7C5C /* InfectionSimulator.swift in Sources */,
 				92FCC6E92A0BDFC000BC7C5C /* SceneDelegate.swift in Sources */,
+				92FCC6FD2A0BFE4C00BC7C5C /* SimulationScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		92FCC6EC2A0BDFC000BC7C5C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				92FCC6ED2A0BDFC000BC7C5C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		92FCC6F12A0BDFC100BC7C5C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +304,6 @@
 				INFOPLIST_FILE = InfectionSimulatorVK/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +331,6 @@
 				INFOPLIST_FILE = InfectionSimulatorVK/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
